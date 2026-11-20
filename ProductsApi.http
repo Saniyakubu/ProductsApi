@@ -1,0 +1,33 @@
+@ProductsApi_HostAddress = http://localhost:5026
+
+GET {{ProductsApi_HostAddress}}/api/product/all
+Accept: application/json
+
+###
+GET {{ProductsApi_HostAddress}}/api/product/20
+Accept: application/json
+
+###
+POST {{ProductsApi_HostAddress}}/api/product
+Content-Type: application/json
+{
+    "id": 13,
+    "name": "S 10",
+    "brand": "SamSung",
+    "price": 40000,
+    "category": "Phones"
+}
+
+###
+
+PUT {{ProductsApi_HostAddress}}/api/product/10
+Content-Type: application/json
+{
+    "price": 60000
+}
+
+###
+
+DELETE {{ProductsApi_HostAddress}}/api/product/10
+Content-Type: application/json}
+
