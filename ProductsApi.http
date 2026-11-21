@@ -31,3 +31,34 @@ Content-Type: application/json
 DELETE {{ProductsApi_HostAddress}}/api/product/10
 Content-Type: application/json}
 
+
+###
+GET {{ProductsApi_HostAddress}}/api/book/all
+Accept: application/json
+
+###
+GET {{ProductsApi_HostAddress}}/api/book/6
+Accept: application/json
+
+
+###
+GET {{ProductsApi_HostAddress}}/api/Book/status/true
+Accept: application/json
+
+###
+POST {{ProductsApi_HostAddress}}/api/Book
+Content-Type: application/json
+{
+  "id": 15,
+  "title": "The Psychology of Money 2",
+  "author": "Morgan Housel",
+  "price": 6000,
+  "genre": "Finance",
+  "isAvailable": true
+}
+
+###
+
+DELETE {{ProductsApi_HostAddress}}/api/Book/1
+Content-Type: application/json}
+
